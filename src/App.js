@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import products from "./products";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Restaurants</h1>
+      <p>my fav restaurants</p>
+      <img
+        alt="restaurant image"
+        className="restaurant-banner"
+        src="https://wikiforschool.com/uploads/1261021200px-kfc_logo.svg.png"
+      />
+      <p>{products[0].name}</p>
+      <p>{products[0].price}</p>
+      <img alt="twister image" className="App" src={products[0].img} />
+      <p>{products[1].name}</p>
+      <p>{products[1].price}</p>
+      <img alt="twister image" className="App" src={products[1].img} />
     </div>
   );
 }
